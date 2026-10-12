@@ -1,0 +1,21 @@
+{
+  "name": "Рабочее место курса",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+  },
+  "hostRequirements": { "cpus": 2 },
+  "postCreateCommand": "bash .devcontainer/posle-sozdaniya.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.autoSave": "afterDelay",
+        "workbench.startupEditor": "readme"
+      }
+    },
+    "codespaces": {
+      "openFiles": ["README.md"]
+    }
+  }
+}

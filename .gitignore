@@ -1,0 +1,11 @@
+# ключи и пароли в репозиторий не попадают
+.env
+.env.*
+*.local.env
+credentials*
+tokeny*
+# мусор
+node_modules/
+__pycache__/
+.DS_Store
+*.log
